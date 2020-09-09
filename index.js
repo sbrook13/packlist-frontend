@@ -13,8 +13,8 @@ fetch('http://localhost:3500/activities')
 
             activityCard.classList.add('activity-card')
             header.innerHTML = `<a class="activity-header" href="activity.html?id=${activity.id}">${activity.name}</a>`
-            image.innerHTML = `<a href="activity.html?id=${activity.id}"><img src=${activity.image}></a>`
-
+            // image.innerHTML = `<a href="activity.html?id=${activity.id}"><img src=${activity.image}></a>`
+            activityCard.style.backgroundImage = `url('${activity.image}')`
             activityCard.append(header, image)
             activitySection.append(activityCard)
         })
@@ -37,3 +37,5 @@ fetch('http://localhost:3500/activities')
         ],
         delay: 1100
         })
+    
+    

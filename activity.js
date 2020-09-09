@@ -13,8 +13,9 @@ fetch(`http://localhost:3500/activities/${id}`)
         const description = document.createElement('p')
 
         title.textContent = activity.name
-        image.src = activity.image
+        // image.src = activity.image
         description.textContent = activity.description
+        activityHeader.style.backgroundImage = `url('${activity.image}')`
 
         activityHeader.append(title, image, description) 
 
