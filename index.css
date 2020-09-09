@@ -1,15 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Kumbh Sans', sans-serif;
-    background-image: ; 
     background-size: cover;
 }
 
+
 h1 {
-    color:red;
+    color: white;
     font-size: 60px;
     font-weight: 700;
-}
+    text-align: center;
+    padding: 10px auto;
+    font-style: italic;
+    -webkit-text-stroke: 1px black;
+}   
 
 h2 {
     font-size: 30px;
@@ -26,4 +35,117 @@ p {
 
 img {
     width: 300px;
+    height: 200px;
+    border-radius: 10px 100%;
 }
+
+img:hover {
+    border-radius: 8px;
+}
+
+.activity-header:hover {
+   color:  rgb(9, 60, 9);
+}
+.activity-header:visited {
+   color:  rgb(9, 60, 9);
+}
+.activity-header:link {
+    color:  rgb(9, 60, 9);
+
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    position: relative;
+    background-color: rgb(9, 60, 9);
+    padding: 25px 0 25px 0;
+    width: 100%;
+}
+
+#title {
+    position: absolute;
+    margin: 135px 0 0 0;
+}
+
+#sign-in-button {
+   position: absolute;
+   right: 15px;
+   top: 10px;
+   font-size: 28px;
+   color: white;
+   border-radius: 8px;
+   background-color: black;
+}
+
+#sign-in:hover{
+    color: gold;
+}
+
+#activity-section {
+    font-size: 25px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.activity-card {
+    padding: 50px;
+    text-align: center;
+    justify-content: center;
+    width: 20%;
+    background-repeat: no-repeat;
+    margin: 2rem;
+    border-radius: 10px 100%;
+}
+.activity-card:hover {
+    border-radius: 8px;
+}
+
+footer {
+    background-color: rgb(9, 60, 9);
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.gear-bullet {
+    display: list-item;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+/* triangle css */
+.triangle {
+    position: relative;
+    height: 300px;
+    clip-path: polygon(55% 0, 5% 100%, 80% 100%);
+    width: 100%;
+}
+
+.triangle div {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    margin: 0 auto 10px;
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/06653b48-43c3-403f-9d72-c1c5519db560/dd3pza8-930e0f24-e194-495d-90a6-bf6e66fdbe79.jpg/v1/fill/w_1194,h_669,q_70,strp/stone_wall_by_pajunen_dd3pza8-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD0xMDc2IiwicGF0aCI6IlwvZlwvMDY2NTNiNDgtNDNjMy00MDNmLTlkNzItYzFjNTUxOWRiNTYwXC9kZDNwemE4LTkzMGUwZjI0LWUxOTQtNDk1ZC05MGE2LWJmNmU2NmZkYmU3OS5qcGciLCJ3aWR0aCI6Ijw9MTkyMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.TZhslY79iAeVhmkle4q6BTkwU2Vk3nGd3cKcgAtXOGc');
+}
+.top {
+    z-index: 1;
+}
+
+/* .title-svg path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 0;
+    position: relative;
+}
+
+.title-svg { 
+    position: relative;
+    width: 100%;
+    text-align: center; 
+}  */
+

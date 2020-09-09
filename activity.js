@@ -12,6 +12,13 @@ fetch(`http://localhost:3500/activities/${id}`)
         const image = document.createElement('img')
         const description = document.createElement('p')
 
+        title.textContent = activity.name
+        // image.src = activity.image
+        description.textContent = activity.description
+        activityHeader.style.backgroundImage = `url('${activity.image}')`
+
+        activityHeader.append(title, image, description) 
+
         const categories = new Set()
         activity.gears.forEach(gear =>{
             categories.add(gear.category)
@@ -38,9 +45,4 @@ fetch(`http://localhost:3500/activities/${id}`)
            categoryCard.append(gearItem)
         })
 
-        title.textContent = activity.name
-        image.src = activity.image
-        description.textContent = activity.description
-
-        activityHeader.append(title, image, description)   
     })
