@@ -7,14 +7,33 @@ fetch('http://localhost:3500/activities')
         activities.forEach(activity=> {
             const activityCard = document.createElement('div')
             const header = document.createElement('h2')
-            const image = document.createElement('img')
+            const image = document.createElement('a')
 
             console.log(activity)
 
+            activityCard.classList.add('activity-card')
             header.innerHTML = `<a href="activity.html?id=${activity.id}">${activity.name}</a>`
-            image.src = activity.image
+            image.innerHTML = `<a href="activity.html?id=${activity.id}"><img src=${activity.image}></a>`
 
             activityCard.append(header, image)
             activitySection.append(activityCard)
         })
     })
+
+//functions for pyramid movement
+    anime({
+        targets: 'div.middle',
+        translateY: [
+            {value: 110, duration: 1000},
+        
+        ],
+        delay: 500
+        })
+
+    anime({
+        targets: 'div.bottom',
+        translateY: [
+            {value: 220, duration: 1000},
+        ],
+        delay: 1100
+        })
