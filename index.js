@@ -22,7 +22,7 @@ fetch('http://localhost:3500/activities')
     anime({
         targets: 'div.middle',
         translateY: [
-            {value: 110, duration: 1000},
+            {value: 110, duration: 1700},
         ],
         delay: 500
         })
@@ -30,9 +30,9 @@ fetch('http://localhost:3500/activities')
     anime({
         targets: 'div.bottom',
         translateY: [
-            {value: 220, duration: 1800},
+            {value: 220, duration: 3300},
         ],
-        delay: 1100
+        delay: 1200
         })
     
     

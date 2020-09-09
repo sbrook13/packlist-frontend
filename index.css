@@ -87,7 +87,6 @@ header {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    margin: 4rem 0;
 }
 
 .activity-card {
@@ -98,6 +97,7 @@ header {
     background-repeat: no-repeat;
     margin: 6rem 2rem;
     border-radius: 10px 100%;
+    background-size: cover;
 }
 .activity-card:hover {
     border-radius: 8px;
@@ -129,9 +129,8 @@ footer {
 .triangle div {
     position: absolute;
     top: 0;
-    width: 100%;
+    width: 100vw;
     height: 100px;
-    margin: 0 auto 10px;
     background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/06653b48-43c3-403f-9d72-c1c5519db560/dd3pza8-930e0f24-e194-495d-90a6-bf6e66fdbe79.jpg/v1/fill/w_1194,h_669,q_70,strp/stone_wall_by_pajunen_dd3pza8-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD0xMDc2IiwicGF0aCI6IlwvZlwvMDY2NTNiNDgtNDNjMy00MDNmLTlkNzItYzFjNTUxOWRiNTYwXC9kZDNwemE4LTkzMGUwZjI0LWUxOTQtNDk1ZC05MGE2LWJmNmU2NmZkYmU3OS5qcGciLCJ3aWR0aCI6Ijw9MTkyMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.TZhslY79iAeVhmkle4q6BTkwU2Vk3nGd3cKcgAtXOGc');
 }
 .top {
