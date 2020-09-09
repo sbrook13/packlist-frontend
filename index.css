@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Kumbh Sans', sans-serif;
-    
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/06653b48-43c3-403f-9d72-c1c5519db560/dd3pza8-930e0f24-e194-495d-90a6-bf6e66fdbe79.jpg/v1/fill/w_1194,h_669,q_70,strp/stone_wall_by_pajunen_dd3pza8-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD0xMDc2IiwicGF0aCI6IlwvZlwvMDY2NTNiNDgtNDNjMy00MDNmLTlkNzItYzFjNTUxOWRiNTYwXC9kZDNwemE4LTkzMGUwZjI0LWUxOTQtNDk1ZC05MGE2LWJmNmU2NmZkYmU3OS5qcGciLCJ3aWR0aCI6Ijw9MTkyMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.TZhslY79iAeVhmkle4q6BTkwU2Vk3nGd3cKcgAtXOGc');
     background-size: cover;
 }
 
@@ -30,11 +30,11 @@ p {
 img {
     width: 300px;
     height: 200px;
-    border-radius: 10px 60%;
+    border-radius: 10px 100%;
 }
 
 img:hover {
-    opacity: 50%;
+    border-radius: 8px;
 }
 
 header {
@@ -42,17 +42,17 @@ header {
     justify-content: space-around;
     text-align: center;
     position: relative;
-
 }
 
-header:hover {
-    opacity: 50%;
+.activity-header {
+    color: gold;
+}
+.activity-header:hover {
+    color:purple;
 }
 
 #title {
     position: absolute;
-    /* top: 120px;
-    left: 550px; */
     margin: 135px 0 0 0;
 }
 
@@ -61,6 +61,11 @@ header:hover {
    right: 15px;
    top: 10px;
    font-size: 20px;
+   color: gold;
+}
+
+#sign-in:hover{
+    color: gold;
 }
 
 #activity-section {
@@ -77,14 +82,13 @@ header:hover {
     align-content: center;
 }
 
-
-
 footer {
     background-color: black;
     color: white;
     padding: 15px;
     display: flex;
-    justify-content: space-around;  
+    justify-content: space-around;
+   
 }
 
 .gear-bullet {

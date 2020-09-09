@@ -12,7 +12,7 @@ fetch('http://localhost:3500/activities')
             console.log(activity)
 
             activityCard.classList.add('activity-card')
-            header.innerHTML = `<a href="activity.html?id=${activity.id}">${activity.name}</a>`
+            header.innerHTML = `<a class="activity-header" href="activity.html?id=${activity.id}">${activity.name}</a>`
             image.innerHTML = `<a href="activity.html?id=${activity.id}"><img src=${activity.image}></a>`
 
             activityCard.append(header, image)
