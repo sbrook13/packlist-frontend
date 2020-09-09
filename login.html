@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="login.js" defer></script>
+</head>
+<body>
+    <h1>LOGIN</h1>
+    <p>Sign Up Now</p>
+    <form method="POST" action="http://localhost:3500/users">
+        <input name="name" placeholder="Your First Name" type="text">
+        <input name="username" placeholder="Enter Username" type="text">
+        <input name="password" placeholder="Enter Password" type="password">
+        <input type="submit" value="Create User">
+    </form>
+    <p>Sign In</p>
+    <form method="POST" action="http://localhost:3500/login">
+        <input name="username" placeholder="Enter Username" type="text">
+        <input name="password" placeholder="Enter Password" type="password">
+        <input type="submit" value="Login">
+    </form>
+</body>
+</html>

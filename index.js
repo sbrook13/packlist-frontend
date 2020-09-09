@@ -6,12 +6,17 @@ fetch('http://localhost:3500/activities')
         const activitySection = document.querySelector('#activity-section')
         activities.forEach(activity=> {
             const activityCard = document.createElement('div')
+
+            const header = document.createElement('h3')
+            const image = document.createElement('img')
+
+
             const header = document.createElement('h2')
 
             console.log(activity)
 
             activityCard.classList.add('activity-card')
-            header.innerHTML = `<a class="activity-header" href="activity.html?id=${activity.id}">${activity.name}</a>`
+            header.innerHTML = `<a class="activity-header" href="activity.html?activity_id=${activity.id}">${activity.name}</a>`
             activityCard.style.backgroundImage = `url('${activity.image}')`
             activityCard.append(header)
             activitySection.append(activityCard)
@@ -33,6 +38,6 @@ fetch('http://localhost:3500/activities')
             {value: 220, duration: 3300},
         ],
         delay: 1200
+      
         })
-    
-    
+    })
