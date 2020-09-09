@@ -1,18 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap');
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Kumbh Sans', sans-serif;
-    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/06653b48-43c3-403f-9d72-c1c5519db560/dd3pza8-930e0f24-e194-495d-90a6-bf6e66fdbe79.jpg/v1/fill/w_1194,h_669,q_70,strp/stone_wall_by_pajunen_dd3pza8-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD0xMDc2IiwicGF0aCI6IlwvZlwvMDY2NTNiNDgtNDNjMy00MDNmLTlkNzItYzFjNTUxOWRiNTYwXC9kZDNwemE4LTkzMGUwZjI0LWUxOTQtNDk1ZC05MGE2LWJmNmU2NmZkYmU3OS5qcGciLCJ3aWR0aCI6Ijw9MTkyMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.TZhslY79iAeVhmkle4q6BTkwU2Vk3nGd3cKcgAtXOGc');
     background-size: cover;
 }
 
 h1 {
-    color: black;
+    color: white;
     font-size: 60px;
     font-weight: 700;
     text-align: center;
     padding: 10px auto;
-}
+    font-style: italic;
+    -webkit-text-stroke: 1px black;
+}   
 
 h2 {
     font-size: 30px;
@@ -39,17 +44,16 @@ img:hover {
 
 header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     text-align: center;
     position: relative;
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/06653b48-43c3-403f-9d72-c1c5519db560/dd3pza8-930e0f24-e194-495d-90a6-bf6e66fdbe79.jpg/v1/fill/w_1194,h_669,q_70,strp/stone_wall_by_pajunen_dd3pza8-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD0xMDc2IiwicGF0aCI6IlwvZlwvMDY2NTNiNDgtNDNjMy00MDNmLTlkNzItYzFjNTUxOWRiNTYwXC9kZDNwemE4LTkzMGUwZjI0LWUxOTQtNDk1ZC05MGE2LWJmNmU2NmZkYmU3OS5qcGciLCJ3aWR0aCI6Ijw9MTkyMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.TZhslY79iAeVhmkle4q6BTkwU2Vk3nGd3cKcgAtXOGc');
+    padding: 25px 0 25px 0;
+    width: 100%;
 }
 
-.activity-header {
-    color: gold;
-}
 .activity-header:hover {
-   
-    color:purple;
+   color: gold;
 }
 
 #title {
@@ -57,12 +61,14 @@ header {
     margin: 135px 0 0 0;
 }
 
-#sign-in {
+#sign-in-button {
    position: absolute;
    right: 15px;
    top: 10px;
-   font-size: 20px;
+   font-size: 28px;
    color: gold;
+   border-radius: 8px;
+   background-color: black;
 }
 
 #sign-in:hover{
