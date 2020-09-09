@@ -1,6 +1,9 @@
 
 const queryParams = new URLSearchParams(window.location.search)
-const id = queryParams.get('id')
+const id = queryParams.get('activity_id')
+
+const secondParams = new URLSearchParams(window.location.search)
+const user_id = secondParams.get('user_id')
 
 const activityHeader = document.querySelector('#activity-header')
 const packingList = document.querySelector('#packing-list')
@@ -13,7 +16,6 @@ fetch(`http://localhost:3500/activities/${id}`)
         const description = document.createElement('p')
 
         title.textContent = activity.name
-        // image.src = activity.image
         description.textContent = activity.description
         activityHeader.style.backgroundImage = `url('${activity.image}')`
 
@@ -39,10 +41,17 @@ fetch(`http://localhost:3500/activities/${id}`)
            const categoryCard = packingList.querySelector(`#${gear.category.toLowerCase()}`)
            const gearItem =  document.createElement('p')
 
-           gearItem.classList.add('gear-bullet')  
-           gearItem.textContent = gear.name
+           gearItem.classList.add('gear-bullet')
+           gearItem.innerHTML = `
+           ${gear.name}
+           <input type="hidden" name="user_id" value=${user_id}>
+           <input type="hidden" name="gear_id" value=${gear.id} multiple>
+           <input type="checkbox" name="gear" checked multiple>
+           `  
+
 
            categoryCard.append(gearItem)
-        })
 
+        })
+ 
     })
