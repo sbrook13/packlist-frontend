@@ -41,6 +41,7 @@ img {
 
 img:hover {
     border-radius: 8px;
+    
 }
 
 .activity-header:hover {
@@ -51,7 +52,6 @@ img:hover {
 }
 .activity-header:link {
     color:  rgb(9, 60, 9);
-
 }
 
 header {
@@ -137,15 +137,5 @@ footer {
     z-index: 1;
 }
 
-/* .title-svg path {
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 0;
-    position: relative;
-}
 
-.title-svg { 
-    position: relative;
-    width: 100%;
-    text-align: center; 
-}  */
 

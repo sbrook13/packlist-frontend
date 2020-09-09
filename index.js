@@ -7,15 +7,13 @@ fetch('http://localhost:3500/activities')
         activities.forEach(activity=> {
             const activityCard = document.createElement('div')
             const header = document.createElement('h2')
-            const image = document.createElement('a')
 
             console.log(activity)
 
             activityCard.classList.add('activity-card')
             header.innerHTML = `<a class="activity-header" href="activity.html?id=${activity.id}">${activity.name}</a>`
-            // image.innerHTML = `<a href="activity.html?id=${activity.id}"><img src=${activity.image}></a>`
             activityCard.style.backgroundImage = `url('${activity.image}')`
-            activityCard.append(header, image)
+            activityCard.append(header)
             activitySection.append(activityCard)
         })
     })
