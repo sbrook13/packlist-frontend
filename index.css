@@ -41,7 +41,6 @@ img {
 
 img:hover {
     border-radius: 8px;
-    
 }
 
 .activity-header:hover {
@@ -88,6 +87,7 @@ header {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+    margin: 4rem 0;
 }
 
 .activity-card {
@@ -96,11 +96,12 @@ header {
     justify-content: center;
     width: 20%;
     background-repeat: no-repeat;
-    margin: 2rem;
+    margin: 6rem 2rem;
     border-radius: 10px 100%;
 }
 .activity-card:hover {
     border-radius: 8px;
+    transition: border-radius 1s;
 }
 
 footer {

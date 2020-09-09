@@ -23,7 +23,6 @@ fetch('http://localhost:3500/activities')
         targets: 'div.middle',
         translateY: [
             {value: 110, duration: 1000},
-        
         ],
         delay: 500
         })
