@@ -6,7 +6,6 @@ console.log(user_id)
 console.log('button', profileButton)
 profileButton.action = `http://localhost:3500/profile`
 
-
 fetch('http://localhost:3500/activities')
 .then(response => response.json())
 .then(activities => {
@@ -17,7 +16,7 @@ fetch('http://localhost:3500/activities')
 
 
         activityCard.classList.add('activity-card')
-        header.innerHTML = `<a class="activity-header" href="activity.html?activity_id=${activity.id}">${activity.name}</a>`
+        header.innerHTML = `<a class="activity-header" href="activity.html?user_id=${user_id}&activity_id=${activity.id}">${activity.name}</a>`
         activityCard.style.backgroundImage = `url('${activity.image}')`
         activityCard.append(header)
         activitySection.append(activityCard)
