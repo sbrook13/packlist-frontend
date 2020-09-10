@@ -12,14 +12,13 @@ fetch(`http://localhost:3500/activities/${id}`)
     .then(response => response.json())
     .then(activity => {
         const title = document.createElement('h1')
-        const image = document.createElement('img')
         const description = document.createElement('p')
 
-        title.textContent = activity.name
+        title.textContent = activity.name.toUpperCase()
         description.textContent = activity.description
         activityHeader.style.backgroundImage = `url('${activity.image}')`
 
-        activityHeader.append(title, image, description) 
+        activityHeader.append(title, description) 
 
         const categories = new Set()
         activity.gears.forEach(gear =>{
