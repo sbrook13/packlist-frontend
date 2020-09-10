@@ -8,6 +8,14 @@ const user_id = secondParams.get('user_id')
 const activityHeader = document.querySelector('#activity-header')
 const packingList = document.querySelector('#packing-list')
 
+const homeButton = document.querySelector('#home-button')
+const input = document.createElement('input')
+    input.type = "hidden"
+    input.name = "user_id"
+    input.value = user_id
+
+    homeButton.prepend(input)
+
 fetch(`http://localhost:3500/activities/${id}`)
     .then(response => response.json())
     .then(activity => {
