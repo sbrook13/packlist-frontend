@@ -41,11 +41,11 @@ fetch(`http://localhost:3500/activities/${id}`)
            const gearItem =  document.createElement('p')
 
            gearItem.classList.add('gear-bullet')
-           gearItem.innerHTML = `
+           gearItem.innerHTML = `<a href="${gear.url}">
            ${gear.name}
            <input type="hidden" name="user_id" value=${user_id}>
            <input type="hidden" name="gear_id" value=${gear.id} multiple>
-           <input type="checkbox" name="gear" checked multiple>
+           <input type="checkbox" name="gear" checked multiple></a>
            `  
 
 

@@ -6,7 +6,7 @@ fetch('http://localhost:3500/activities')
         const activitySection = document.querySelector('#activity-section')
         activities.forEach(activity => {
             const activityCard = document.createElement('div')
-            const header = document.createElement('h3')
+            const header = document.createElement('h2')
 
 
             activityCard.classList.add('activity-card')
