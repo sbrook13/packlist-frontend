@@ -32,7 +32,7 @@ fetch('http://localhost:3500/activities')
         })
     })
 
-fetch('http://localhost:3500/user_packs')
+fetch('http://localhost:3500/packs')
     .then(response => response.json())
     .then(packedBags => {
         const bags = document.querySelector('#packed-bags')

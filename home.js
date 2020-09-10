@@ -1,6 +1,11 @@
 const secondParams = new URLSearchParams(window.location.search)
 const user_id = secondParams.get('user_id')
 
+const profileButton = document.querySelector('#profile-button')
+console.log(user_id)
+console.log('button', profileButton)
+profileButton.action = `http://localhost:3500/profile`
+
 fetch('http://localhost:3500/activities')
 .then(response => response.json())
 .then(activities => {
@@ -17,6 +22,7 @@ fetch('http://localhost:3500/activities')
         activitySection.append(activityCard)
     })
 })
+
 
 //functions for pyramid movement
 anime({
