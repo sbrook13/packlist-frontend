@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap');
+@import 'meyer-reset.css';
 
 * {
     box-sizing: border-box;
@@ -11,11 +12,14 @@ body {
 
 
 h1 {
-    color: black;
-    font-size: 70px;
+    color: rgba(255, 255, 255, 0.3);;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: white;
+    font-size: 100px;
+    letter-spacing: 10px;
     font-weight: 700;
     text-align: center;
-    padding: 10px auto;
+    padding-top: 10px; 
 }   
 
 h2 {
@@ -42,13 +46,13 @@ img:hover {
     transform: scale(2)
 }
 
-.activity-header:hover {
-   color:  rgb(9, 60, 9);
+a:hover {
+   color:   rgb(9, 60, 9);
 }
-.activity-header:visited {
-   color:  rgb(9, 60, 9);
+.activity-card a:visited {
+   color: black;
 }
-.activity-header:link {
+a:link {
     color:  white;
 }
 
@@ -70,24 +74,23 @@ header {
    position: absolute;
    right: 15px;
    top: 10px;
-   font-size: 14px;
-   font-weight: 300;
-   color: grey;
+   -webkit-text-stroke-width: 0px;
+   letter-spacing: 0.1em;
+   color: white;
    border-radius: 8px;
    background-color: rgba(255, 255, 255, 0.2);
    padding: 1rem
 }
 
-#sign-in:hover{
-    color: gold;
+#sign-in-button:hover{
     transform: scale(1.25)
 }
 
 #activity-section {
-    font-size: 25px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+    margin: 0.5rem
 }
 
 .activity-card {
@@ -101,6 +104,7 @@ header {
     border-radius: 10px 85%;
     background-size: cover;
 }
+
 .activity-card:hover {
     border-radius: 8px;
     transition: border-radius 1s;
@@ -127,6 +131,7 @@ footer {
     height: 300px;
     clip-path: polygon(55% 0, 5% 100%, 80% 100%);
     width: 100%;
+    margin: 2rem;
 }
 
 .triangle div {
@@ -134,10 +139,15 @@ footer {
     top: 0;
     width: 100vw;
     height: 100px;
-    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/06653b48-43c3-403f-9d72-c1c5519db560/dd3pza8-930e0f24-e194-495d-90a6-bf6e66fdbe79.jpg/v1/fill/w_1194,h_669,q_70,strp/stone_wall_by_pajunen_dd3pza8-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD0xMDc2IiwicGF0aCI6IlwvZlwvMDY2NTNiNDgtNDNjMy00MDNmLTlkNzItYzFjNTUxOWRiNTYwXC9kZDNwemE4LTkzMGUwZjI0LWUxOTQtNDk1ZC05MGE2LWJmNmU2NmZkYmU3OS5qcGciLCJ3aWR0aCI6Ijw9MTkyMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.TZhslY79iAeVhmkle4q6BTkwU2Vk3nGd3cKcgAtXOGc');
+    background-color: rgba(31, 28, 28, 0.85)
+    /* background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/06653b48-43c3-403f-9d72-c1c5519db560/dd3pza8-930e0f24-e194-495d-90a6-bf6e66fdbe79.jpg/v1/fill/w_1194,h_669,q_70,strp/stone_wall_by_pajunen_dd3pza8-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD0xMDc2IiwicGF0aCI6IlwvZlwvMDY2NTNiNDgtNDNjMy00MDNmLTlkNzItYzFjNTUxOWRiNTYwXC9kZDNwemE4LTkzMGUwZjI0LWUxOTQtNDk1ZC05MGE2LWJmNmU2NmZkYmU3OS5qcGciLCJ3aWR0aCI6Ijw9MTkyMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.TZhslY79iAeVhmkle4q6BTkwU2Vk3nGd3cKcgAtXOGc'); */
 }
 .top {
     z-index: 1;
+}
+
+#home-page-header {
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/06653b48-43c3-403f-9d72-c1c5519db560/dd3pza8-930e0f24-e194-495d-90a6-bf6e66fdbe79.jpg/v1/fill/w_1194,h_669,q_70,strp/stone_wall_by_pajunen_dd3pza8-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD0xMDc2IiwicGF0aCI6IlwvZlwvMDY2NTNiNDgtNDNjMy00MDNmLTlkNzItYzFjNTUxOWRiNTYwXC9kZDNwemE4LTkzMGUwZjI0LWUxOTQtNDk1ZC05MGE2LWJmNmU2NmZkYmU3OS5qcGciLCJ3aWR0aCI6Ijw9MTkyMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.TZhslY79iAeVhmkle4q6BTkwU2Vk3nGd3cKcgAtXOGc');
 }
 
 
