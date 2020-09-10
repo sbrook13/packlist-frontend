@@ -1,5 +1,25 @@
 @import 'index.css';
 
+
+header {
+    margin: 0 5px 50px 0;
+}
+
+#home-button {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    letter-spacing: 0.1em;
+    color: black;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 1rem
+}
+
+#home-button:hover {
+    transform: scale(1.25)
+}
+
 #activity-header {
     width: 100vw;
     display: flex;
@@ -32,6 +52,7 @@ h2 {
     display: flex;
     justify-content: center;
     text-align: center;
+    margin: 30px 0 0 0;
 
 }
 
@@ -46,30 +67,41 @@ h2 {
 #gearCard {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    font-size: 30px;
-   
 }
 
 .category-card {
     text-align: center;
-    padding: 15px 50px;
-    border-width: 5px;
+    padding: 15px 40px;
     height: auto;
-    width: auto;
+    width: 400px;
     margin: 20px;
     border-radius: 8px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgba(106, 93, 93, 0.85);
+    background-color: rgba(45, 35, 35, 0.2);
+}
 
+.category-card:hover {
+    transform: scale(1.25)
 }
 
 h3 {
     font-style: italic;
     text-decoration: underline;
-
+    padding: 0 0 10px 0;
 }
 
-#home-button {
-    display: flex;
-    justify-content: flex-end;
+.gear-bullet a{
+    color: steelblue;
 }
+
+.label-input {
+    font-size: 30px;
+    margin: 30px 20px;
+    border-radius:
+}
+
+
