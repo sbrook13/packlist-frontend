@@ -1,5 +1,26 @@
 @import 'index.css';
 
+
+header {
+    margin: 0 5px 50px 0;
+}
+
+#home-button {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    -webkit-text-stroke-width: 0px;
+    letter-spacing: 0.1em;
+    color: black;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 1rem
+}
+
+#home-button:hover {
+    transform: scale(1.25)
+}
+
 #activity-header {
     width: 100vw;
     display: flex;
@@ -32,6 +53,7 @@ h2 {
     display: flex;
     justify-content: center;
     text-align: center;
+    margin: 30px 0 0 0;
 
 }
 
@@ -66,10 +88,9 @@ h2 {
 h3 {
     font-style: italic;
     text-decoration: underline;
-
 }
 
-#home-button {
-    display: flex;
-    justify-content: flex-end;
+
+.gear-bullet a{
+    color: blue;
 }
