@@ -20,7 +20,7 @@ fetch('http://localhost:3500/activities')
         const header = document.createElement('h2')
 
 
-        activityCard.classList.add('activity-card')
+        activityCard.classList.add('display-card')
         header.innerHTML = `<a class="activity-header" href="activity.html?user_id=${user_id}&activity_id=${activity.id}">${activity.name}</a>`
         activityCard.style.backgroundImage = `url('${activity.image}')`
         activityCard.append(header)

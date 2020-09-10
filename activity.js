@@ -40,8 +40,8 @@ fetch(`http://localhost:3500/activities/${id}`)
             categoryCard.id = category.toLowerCase()
             categoryCard.classList.add('category-card')
             subtitle.textContent = category
+            
             categoryCard.append(subtitle)
-
             packingList.append(categoryCard)
         })
 

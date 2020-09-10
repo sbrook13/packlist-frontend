@@ -48,7 +48,7 @@ header {
     padding: 1rem
 }
 
-h2 {
+h2, p {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -56,26 +56,24 @@ h2 {
 
 }
 
+#name-the-list {
+    display: flex;
+    justify-content: center;
+}
+
 #packing-list {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
     margin: 30px;
-}
-
-#gearCard {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: center;
 }
 
 .category-card {
     text-align: center;
     padding: 15px 40px;
     height: auto;
-    width: 400px;
+    width: auto;
     margin: 20px;
     border-radius: 8px;
     border-width: 5px;
@@ -99,9 +97,13 @@ h3 {
 }
 
 .label-input {
-    font-size: 30px;
-    margin: 30px 20px;
+    margin: 20px 5px;
+    padding: 0.5rem;
     border-radius: 8px;
+}
+
+#list-name.label-input {
+    width: 25%;
 }
 
 

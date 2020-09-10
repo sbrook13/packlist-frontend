@@ -28,23 +28,19 @@ fetch('http://localhost:3500/packs')
     .then(packs => {
         const packSection = document.querySelector('#pack-section')
 
-        const packNames = new Set()
         packs.forEach(pack => {
             if (pack.user_id == user_id) {
-                packNames.add(pack.name) 
+                const packCard = document.createElement('div')
+                const subtitle = document.createElement('h3')
+
+                packCard.classList.add('display-card')
+                subtitle.innerHTML = `<a href="pack.html?user_id=${user_id}&pack_id=${pack.id}">${pack.name}</a>`
+                    
+                packCard.append(subtitle)
+                packSection.append(packCard)
             }
         })
-
-        packNames.forEach(pack => {
-            const packCard = document.createElement('div')
-            const subtitle = document.createElement('h3')
-
-            packCard.classList.add('pack-card')
-            subtitle.innerHTML = `<a href="pack.html?user_id=${user_id}&pack_id=${pack.id}">${pack.name}</a>`
-            
-            packCard.append(subtitle)
-            packSection.append(packCard)
-        })
+        
     })
 
 const updateForm = document.querySelector('#update-profile-button')
