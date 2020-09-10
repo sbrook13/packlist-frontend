@@ -11,11 +11,12 @@ body {
 
 
 h1 {
-    color: black;
+    color: steelblue;
     font-size: 70px;
     font-weight: 700;
     text-align: center;
     padding: 10px auto;
+    font-style: italic;
 }   
 
 h2 {

@@ -8,15 +8,17 @@
     <script src="activity.js" defer></script>
 </head>
 <body>
-    <header><a href="index.html">HOME</a></header>
+    <header id="home-button"><a href="index.html">HOME</a></header>
     <section id="activity-header"></section>
 
     <section>
-        <h2>Suggested Packing List:</h2>
-        <form method="POST" action="http://localhost:3500/user_packs">
+        <h2>Suggested Packing List</h2>
+        <form id="gearCard" method="POST" action="http://localhost:3500/user_packs">
             <div id="packing-list"></div>
-            <label for="list-name">Name Your Packing List</label>
-            <input id="list-name" type="text" name="list_name" placeholder="i.e. Shelley's backpack">
+            <div class="label-input">
+                <label for="list-name">Name Your Packing List:</label>
+                <input id="list-name" type="text" name="list_name" placeholder="i.e. Shelley's backpack">
+            </div>
             <input type="submit" value="Add Items">
         </form>
     </section>
