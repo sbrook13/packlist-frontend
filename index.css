@@ -95,12 +95,12 @@ header {
     padding: 5rem;
     text-align: center;
     justify-content: center;
-    width: 30%;
     background-repeat: no-repeat;
     margin: 1rem;
     margin-top: 3rem;
     border-radius: 10px 85%;
     background-size: cover;
+    width: 30%;
 }
 .activity-card:hover {
     border-radius: 8px;

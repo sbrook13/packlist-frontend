@@ -1,0 +1,38 @@
+#profile-header {
+    color: steelblue;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px auto;
+    font-style: italic;
+}
+
+.activity-card {
+    padding: 5rem;
+    text-align: center;
+    justify-content: space-around;
+    width: 20%;
+    background-repeat: no-repeat;
+    margin: 1rem;
+    margin-top: 3rem;
+    border-radius: 10px 85%;
+    background-size: cover;
+
+}
+
+#activity-section {
+    display: flex;
+    flex-flow: row wrap;
+    font-size: 25px;
+    justify-content: space-around;
+}
+
+#home-button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.activity-card:hover {
+    border-radius: 8px;
+    transition: border-radius 1s;
+}
