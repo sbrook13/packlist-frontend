@@ -45,7 +45,7 @@ fetch(`http://localhost:3500/activities/${id}`)
            gearItem.innerHTML = `<a href="${gear.url}">
            ${gear.name}
            <input type="hidden" name="user_id" value=${user_id}>
-           <input type="hidden" name="gear_id" value=${gear.id} multiple>
+           <input type="hidden" name="gear_ids[]" value=${gear.id} multiple>
            <input type="checkbox" name="gear" checked multiple></a>
            `  
 
