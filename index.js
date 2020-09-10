@@ -10,7 +10,7 @@ fetch('http://localhost:3500/activities')
 
 
             activityCard.classList.add('activity-card')
-            header.innerHTML = `<a href="activity.html?activity_id=${activity.id}">${activity.name}</a>`
+            header.innerHTML = `<a class="activity-header" href="activity.html?activity_id=${activity.id}">${activity.name}</a>`
             activityCard.style.backgroundImage = `url('${activity.image}')`
             activityCard.append(header)
             activitySection.append(activityCard)
