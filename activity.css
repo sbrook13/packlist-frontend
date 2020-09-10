@@ -14,9 +14,6 @@
 }
 
 #activity-header h1 {
-    color: rgba(255, 0, 0, 0.0);;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: white;
     font-size: 150px;
     margin: 0.5rem
 }
