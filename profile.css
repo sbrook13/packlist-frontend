@@ -7,32 +7,41 @@
     padding: 50px;
 }
 
-.activity-card {
-    padding: 5rem;
-    text-align: center;
-    justify-content: space-around;
-    width: 20%;
-    background-repeat: no-repeat;
-    margin: 1rem;
-    margin-top: 3rem;
-    border-radius: 10px 85%;
-    background-size: cover;
-
-}
-
-#activity-section {
-    display: flex;
-    flex-flow: row wrap;
-    font-size: 25px;
-    justify-content: space-around;
-}
-
 #home-button {
     display: flex;
     justify-content: flex-end;
 }
 
-.activity-card:hover {
-    border-radius: 8px;
-    transition: border-radius 1s;
+.pack-card{
+    display: flex;
+    padding: 5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    margin-top: 3rem;
+    border-radius: 100px 30%;
+    width: 30%;
+    border: solid black 2px;
+}
+
+.pack-card:hover {
+    transition: transform 1s;
+    transform: scale(1.1);
+}
+
+h3 a:link {
+    color: black;
+    text-align: center
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column
+}
+
+input {
+
 }

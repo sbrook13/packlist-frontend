@@ -34,7 +34,7 @@ fetch('http://localhost:3500/packs')
                 const subtitle = document.createElement('h3')
                 const deleteButton = document.createElement('div')
 
-                packCard.classList.add('display-card')
+                packCard.classList.add('pack-card')
                 subtitle.innerHTML = `<a href="pack.html?user_id=${user_id}&pack_id=${pack.id}">${pack.name}</a>`
                 deleteButton.innerHTML = `
                 <form id="delete-button" method="POST" action="http://localhost:3500/packs/${pack.id}">
