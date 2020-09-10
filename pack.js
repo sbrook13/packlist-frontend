@@ -54,8 +54,6 @@ fetch(`http://localhost:3500/packs/${pack_id}`)
             <input type="submit" value="-"</a>
             </form>
             `  
- 
- 
             categoryCard.append(gearItem)
  
          })

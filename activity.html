@@ -17,13 +17,14 @@
 
     <section>
         <h2>Suggested Packing List</h2>
-        <form id="gearCard" method="POST" action="http://localhost:3500/packs">
-            <div id="packing-list"></div>
-            <div>
+        <p>Uncheck items you don't need, then enter your trip name and start packing! You can add or remove items later.</p>
+        <form id="gear-card" method="POST" action="http://localhost:3500/packs">
+            <div id="name-the-list">
                 <label class="label-input" for="list-name">Name Your Packing List:</label>
                 <input class="label-input" id="list-name" type="text" name="name" placeholder="i.e. Shelley's backpack">
                 <input class="label-input" type="submit" value="Add Items">
             </div>
+            <div id="packing-list"></div>
         </form>
     </section>
 </body>

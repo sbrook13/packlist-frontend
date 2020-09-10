@@ -3,9 +3,8 @@
 #profile-header {
     background-image:url("https://www.expocafeperu.com/w/2020/04/essential-backpacking-gear-hiking-list-granite-crown-rain-swiss-carry-on-luggage-camping-trailer-top-ratings-womens-bike-for-women-ultralight-extreme-labs-baby.jpg");
     background-repeat: no-repeat;
-    display: flex;
+    background-size: cover;
     padding: 50px;
-
 }
 
 .activity-card {
