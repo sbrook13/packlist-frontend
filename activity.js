@@ -30,6 +30,7 @@ fetch(`http://localhost:3500/activities/${id}`)
             const subtitle = document.createElement('h3')
 
             categoryCard.id = category.toLowerCase()
+            categoryCard.classList.add('category-card')
             subtitle.textContent = category
             categoryCard.append(subtitle)
 

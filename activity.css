@@ -28,3 +28,48 @@
     padding: 1rem
 }
 
+h2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+
+#packing-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 30px;
+}
+
+#gearCard {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+   
+}
+
+.category-card {
+    text-align: center;
+    padding: 15px 50px;
+    border-width: 5px;
+    height: auto;
+    width: auto;
+    margin: 20px;
+    border-radius: 8px;
+
+}
+
+h3 {
+    font-style: italic;
+    text-decoration: underline;
+
+}
+
+#home-button {
+    display: flex;
+    justify-content: flex-end;
+}
