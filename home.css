@@ -84,7 +84,7 @@ header {
    padding: 1rem
 }
 
-#sign-in-button:hover{
+#profile-button:hover{
     transform: scale(1.25)
 }
 
@@ -108,7 +108,7 @@ header {
     background-color: grey;
 }
 
-.activity-card:hover {
+.display-card:hover {
     border-radius: 8px;
     transition: border-radius 1s;
 }
