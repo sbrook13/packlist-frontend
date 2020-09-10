@@ -50,7 +50,7 @@ img:hover {
 a:hover {
    color:   rgb(9, 60, 9);
 }
-.activity-card a:visited {
+a:visited {
    color: black;
 }
 
@@ -112,7 +112,7 @@ main > p {
     background-size: cover;
     width: 30%;
     background-color: grey;
-    height: 300px;
+    height:
 }
 
 .display-card:hover {
