@@ -3,41 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PackList Project</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Login</title>
     <script src="index.js" defer></script>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <header id="home-page-header">
-        <div class="triangle">
-            <div class="top"></div>
-            <div class="middle"></div>
-            <div class="bottom"></div>
-        </div>   
-
-        <h1 id="title">GEAR CHECK<h1>
-        <form method="GET" action="http://localhost:3001/login.html">
-            <input type="submit" id="sign-in-button" value='Sign In / Up'/>
-        </form>
-    </header>
-    
+    <header><h1>PACKLIST</h1></header>        
     <main>
-        <section id="activity-section"></section>
+        <section>
+            <h2>New User</h2>
+            <p>Create an account to get started!</p>
+            <form method="POST" action="http://localhost:3500/users">
+                <input name="name" placeholder="Your First Name" type="text">
+                <input name="username" placeholder="Enter Username" type="text">
+                <input name="password" placeholder="Enter Password" type="password">
+                <input type="submit" value="Create User">
+            </form>
+        </section>
+        <section>
+            <h2>Sign In</h2>
+            <p>Welcome Back, we have saved your lists!</p>
+            <form method="POST" action="http://localhost:3500/login">
+                <input name="username" placeholder="Enter Username" type="text">
+                <input name="password" placeholder="Enter Password" type="password">
+                <input type="submit" value="Login">
+            </form>
+        </section>
     </main>
-
-    <footer>
-        <p>©2020</p>
-        <p>Contact Information:</p>
-        <p>Shelley Brook - <a href="https://www.linkedin.com/in/sbrook13/">Linkedin</a>
-            - Email : sbrook13@gmail.com
-        </p>
-        <p>
-            Kyle Trahan - <a href="https://www.linkedin.com/in/kyle-trahan-8384678b/">Linkedin</a>
-            - Email : ktrahan2@gmail.com
-        </p>
-            
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
-    </footer>
-
 </body>
 </html>
