@@ -11,8 +11,8 @@ body {
 
 
 h1 {
-    color: white;
-    font-size: 60px;
+    color: black;
+    font-size: 70px;
     font-weight: 700;
     text-align: center;
     padding: 10px auto;
@@ -39,6 +39,7 @@ img {
 
 img:hover {
     border-radius: 8px;
+    transform: scale(2)
 }
 
 .activity-header:hover {
@@ -56,8 +57,7 @@ header {
     justify-content: space-evenly;
     text-align: center;
     position: relative;
-    background-color: rgb(9, 60, 9);
-    padding: 25px 0 25px 0;
+    padding: 10px 0 10px 0;
     width: 100%;
 }
 
@@ -72,7 +72,7 @@ header {
    top: 10px;
    font-size: 14px;
    font-weight: 300;
-   color: white;
+   color: grey;
    border-radius: 8px;
    background-color: rgba(255, 255, 255, 0.2);
    padding: 1rem
