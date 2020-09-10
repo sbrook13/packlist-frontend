@@ -1,9 +1,9 @@
 const secondParams = new URLSearchParams(window.location.search)
 const user_id = secondParams.get('user_id')
 
-    const profileButton = document.querySelector('#profile-button')
-
-    const input = document.createElement('input')
+    
+const profileButton = document.querySelector('#profile-button')
+const input = document.createElement('input')
     input.type = "hidden"
     input.name = "user_id"
     input.value = user_id

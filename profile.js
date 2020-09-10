@@ -3,6 +3,15 @@ const user_id = queryParams.get('user_id')
 
 const profileHeader = document.querySelector('#profile-header')
 
+const defaultButton = document.querySelector('#default-lists-button')
+const input = document.createElement('input')
+    input.type = "hidden"
+    input.name = "user_id"
+    input.value = user_id
+
+    defaultButton.prepend(input)
+
+
 fetch(`http://localhost:3500/users/${user_id}`)
     .then(response => response.json())
     .then(user => {
