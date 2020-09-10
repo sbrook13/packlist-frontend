@@ -8,11 +8,21 @@
     <link rel="stylesheet" href="profile.css">
 </head>
 <body>
-    <a id="home-button" href="/">HOME</a>
-    <header id="profile-header">
-    </header>
-    <section id="activity-section"></section>
-    <section id="packed-bags"></section>
+    <a id="home-button" href="/"></a>
+    <header id="profile-header"></header>
+    <nav>
+        <form id="default-lists-button" method="GET" action="">
+            <input type="submit" id="default-lists-button" value='See Default Packing Lists'/>
+        </form>
+        <form id="update-profile-button" method="POST" action="">
+            <input type="hidden" name="_method" value="PUT"/>
+            <input type="name" name="name" placeholder="update your name" />
+            <input type="username" name="username" placeholder="update your username" />
+            <input type="password" name="password" placeholder="update your password" />
+            <input type="submit" id="update-profile-button" value='Update Profile'/>
+        </form>
+    </nav>
+    <section id="pack-section"></section>
       
 </body>
 </html>
