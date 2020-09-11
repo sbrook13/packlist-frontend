@@ -76,5 +76,27 @@ fetch(`http://localhost:3500/selected_gears`)
          })
   
     })
-        
-   
+     
+    function sample(array) {
+        return array[Math.floor ( Math.random() * array.length)]
+    }
+    
+    const randomPhotos = [
+        "https://intrepid-guewuklbkgvxhkhdo.stackpathdns.com/wp-content/uploads/2019/11/Best-Inspirational-Travel-Quotes-in-2020.jpg",
+        "https://wallpaperaccess.com/full/28341.jpg",
+        "https://wallpaperaccess.com/full/650130.jpg",
+        "https://www.travelinglifestyle.net/wp-content/uploads/2016/04/travel-inspiration.jpeg",
+        "https://wallpaperaccess.com/full/650127.jpg",
+        "https://www.brainyquote.com/photos_tr/en/a/aristotle/379604/aristotle1-2x.jpg"
+    ]
+  
+    const packHeader = document.querySelector('#pack-header')
+
+    const randomImage = document.createElement('div')
+
+    randomImage.style.backgroundImage = `url(${sample(randomPhotos)})`
+    randomImage.classList.add('random-photo')
+
+    packHeader.prepend(randomImage)
+    
+
