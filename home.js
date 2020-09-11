@@ -14,7 +14,7 @@ const input = document.createElement('input')
 fetch('http://localhost:3500/activities')
 .then(response => response.json())
 .then(activities => {
-    const activitySection = document.querySelector('#activity-section')
+    const activitySection = document.querySelector('#cards-section')
     activities.forEach(activity => {
         const activityCard = document.createElement('div')
         const header = document.createElement('h2')
