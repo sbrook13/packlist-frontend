@@ -4,7 +4,7 @@ An app for finding recommended packing list for outdoor adventures!
 
 # Table Of Contents 
 - [Description](https://github.com/sbrook13/packlist-frontend#description)
-- [Gifs](https://github.com/sbrook13/packlist-frontend#gifsvideo)
+- [How It Works (gifs)](https://github.com/sbrook13/packlist-frontend#howitworks)
 - [Example Code](https://github.com/sbrook13/packlist-frontend#example-code)
 - [Technology Used](https://github.com/sbrook13/packlist-frontend#technology-used)
 - [Setting up for the Application](https://github.com/sbrook13/packlist-frontend#setting-up-for-the-application)
