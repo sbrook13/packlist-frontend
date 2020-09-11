@@ -1,0 +1,94 @@
+# Gear Up
+
+An app for finding recommended packing list for outdoor adventures!
+
+# Table Of Contents 
+- [Description](https://github.com/ktrahan2/packlist-backend#description)
+- [Gifs](https://github.com/ktrahan2/packlist-backend#gifsvideo)
+- [Example Code](https://github.com/ktrahan2/packlist-backend#example-code)
+- [Technology Used](https://github.com/ktrahan2/packlist-backend#technology-used)
+- [Setting up for the Application](https://github.com/ktrahan2/packlist-backend#setting-up-for-the-application)
+- [Main Features](https://github.com/ktrahan2/packlist-backend#main-features)
+- [Features in Progress](https://github.com/ktrahan2/packlist-backend#features-in-progress)
+- [Contact Information](https://github.com/ktrahan2/packlist-backend#contact-information)
+
+## Description
+
+Gear up is a web application that allows the user to register and then browse through different outdoor activities. While browsing these activites the user is able to select and modify a recommended packing list for the specific activity they are doing. After selecting a packing list the user can go to their profile page and see their saved list and make changes to their saved packs. 
+
+## Gifs/video
+
+## Example Code 
+
+```
+    const categories = new Set()
+        activity.gears.forEach(gear =>{
+            categories.add(gear.category)
+        })
+
+    categories.forEach(category =>{
+        const categoryCard = document.createElement('div')
+        const subtitle = document.createElement('h3')
+
+        categoryCard.id = category.toLowerCase()
+        categoryCard.classList.add('category-card')
+        subtitle.textContent = category.toUpperCase()
+
+        categoryCard.append(subtitle)
+        packingList.append(categoryCard)
+        })
+```
+```
+    selected_gears.forEach(selected_gear => {
+        if (selected_gear.pack_id == pack_id){
+            const categoryCard = gearSection.querySelector(`#${selected_gear.gear.category.toLowerCase()}`)
+            const gearItem =  document.createElement('p')
+                
+            gearItem.classList.add('gear-bullet')
+            gearItem.innerHTML = `
+            <form method="POST" action="http://localhost:3500/selected_gears/${selected_gear.gear_id}">
+            <input type="hidden" name="_method" value="delete">
+            <a href="${selected_gear.gear.url}">
+            ${selected_gear.gear.name}
+            <input type="hidden" name="user_id" value=${user_id}>
+            <input type="hidden" name="gear_id" value=${selected_gear.gear_id}>
+            <input type="hidden" name="pack_id" value=${pack_id}>
+            <input type="submit" value="-"</a>
+            </form>
+            `  
+            categoryCard.append(gearItem)
+        }
+ 
+    })
+```    
+
+## Technology Used
+
+- Javescript
+- HTML
+- CSS
+- Anime.js
+
+## Setting up for the application
+
+To start the server run
+
+    ``` lite-server ```
+
+## Main Features
+
+- User can register/sign in
+- User can find a recommended packing list for an outdoor activity
+- User can save this packing list to their profile then later view, update and delete that packing list. 
+
+## Features in Progress
+
+- Allowing users to add individual items to saved packing list. 
+
+## Contact Information
+
+Created by [Shelley Brooke](https://www.linkedin.com/in/sbrook13/) and [Kyle Trahan](https://www.linkedin.com/in/kyle-trahan-8384678b/)
+
+## Link to Backend Repo
+
+https://github.com/ktrahan2/packlist-backend
