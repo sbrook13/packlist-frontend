@@ -18,7 +18,8 @@ An app for finding recommended packing list for outdoor adventures!
 Gear up is a web application that allows the user to register and then browse through different outdoor activities. While browsing these activites the user is able to select and modify a recommended packing list for the specific activity they are doing. After selecting a packing list the user can go to their profile page and see their saved list and make changes to their saved packs. 
 
 ## Gifs/video
-![New List](https://media.giphy.com/media/Q99AHMSoxXrwadb6Yb/giphy.gif)
+![Home Page](https://media.giphy.com/media/Q99AHMSoxXrwadb6Yb/giphy.gif)
+![New List](https://media.giphy.com/media/ZF9KU0qiw74lYTBbOi/giphy.gif)
 
 ## Example Code 
 
