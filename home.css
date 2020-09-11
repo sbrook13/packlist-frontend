@@ -25,26 +25,19 @@ h1 {
 
 h2 {
     font-size: 30px;
+    text-align: center;
 }
 
 h3 {
     font-size: 24px;
     font-weight: 700;
+    text-align: center;
 }
 
 p {
-    font-size: 14px;
-}
-
-img {
-    width: 300px;
-    height: 200px;
-    border-radius: 10px 100%;
-}
-
-img:hover {
-    border-radius: 8px;
-    transform: scale(2)
+    font-size: 18px;
+    text-align: center;
+    margin: 1rem;
 }
 
 a:hover {
@@ -72,29 +65,27 @@ header {
     margin: 135px 0 0 0;
 }
 
+nav {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
 #profile-button {
-   position: absolute;
-   right: 15px;
-   top: 10px;
    -webkit-text-stroke-width: 0px;
    letter-spacing: 0.1em;
-   color: white;
+   color: black;
    border-radius: 8px;
    background-color: rgba(255, 255, 255, 0.2);
-   padding: 1rem
+   padding: 1rem;
+   margin: 0.5rem;
 }
 
 #profile-button:hover{
-    transform: scale(1.25)
+    transform: scale(1.1)
 }
 
-main > p {
-    font-size: 15px;
-    padding: 30px 0;
-    text-align: center;
-
-}
-#activity-section {
+#cards-section {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
@@ -102,17 +93,17 @@ main > p {
 }
 
 .display-card {
+    display: flex;
     padding: 5rem;
-    text-align: center;
+    flex-direction: column;
     justify-content: center;
     background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
     margin: 1rem;
     margin-top: 3rem;
     border-radius: 10px 85%;
-    background-size: cover;
     width: 30%;
-    background-color: grey;
-    height:
 }
 
 .display-card:hover {

@@ -18,12 +18,18 @@ main {
     border-radius: 8px;
 }
 
-h2 {
-    margin: 0;
-}
+
 input {
     padding: 0.5rem;
-    margin-top:0.3em
+    margin-top:0.3em;
+    border-radius: 4px;
+}
+
+#submit-button{
+   letter-spacing: 0.1em;
+   color: black;
+   border-radius: 4px;
+   background-color: rgba(255, 255, 255);
 }
 
 
