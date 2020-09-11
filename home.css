@@ -23,22 +23,24 @@ h1 {
     text-transform: capitalize;
 }   
 
+h2, h3, p {
+    text-align: center;
+    margin: 1rem;
+}
+
 h2 {
     font-size: 30px;
-    text-align: center;
 }
 
 h3 {
     font-size: 24px;
     font-weight: 700;
-    text-align: center;
 }
 
 p {
     font-size: 18px;
-    text-align: center;
-    margin: 1rem;
 }
+
 
 a:hover {
    color:   rgb(9, 60, 9);
@@ -51,12 +53,11 @@ a:link {
     color:  white;
 }
 
-header {
+#home-page-header {
     display: flex;
     justify-content: space-evenly;
-    text-align: center;
     position: relative;
-    padding: 10px 0 10px 0;
+    padding: 10px;
     width: 100%;
 }
 
