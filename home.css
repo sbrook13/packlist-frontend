@@ -83,7 +83,8 @@ nav {
 }
 
 #profile-button:hover{
-    transform: scale(1.1)
+    transform: scale(1.1);
+    transition: .5s
 }
 
 #cards-section {
@@ -123,6 +124,7 @@ footer {
 
 footer a:link {
     color:  blue;
+    margin-top: 2em
 }
 
 .gear-bullet {

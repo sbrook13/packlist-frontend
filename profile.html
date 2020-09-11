@@ -11,10 +11,10 @@
     <a id="home-button" href="/"></a>
     <header id="profile-header"></header>
     <nav>
-        <form id="default-lists-button" method="POST" action="http://localhost:3500/home">
-            <input type="submit" id="default-lists-button" value='See Default Packing Lists'/>
+        <form method="POST" action="http://localhost:3500/home">
+            <input type="submit" id="default-lists-button" value='New Trip? Start with a Standard Packing List!' id="default-lists-button" style="font-size:18px" >
         </form>
-        <form id="update-profile-button" method="POST" action="">
+        <form method="POST" action="">
             <input type="hidden" name="_method" value="PUT"/>
             <input type="name" name="name" placeholder="update your name" />
             <input type="username" name="username" placeholder="update your username" />
@@ -23,6 +23,19 @@
         </form>
     </nav>
     <section id="pack-section"></section>
+    <footer>
+        <p>©2020</p>
+        <p>Contact Information:</p>
+        <p>Shelley Brook - <a href="https://www.linkedin.com/in/sbrook13/">Linkedin</a>
+            - Email : sbrook13@gmail.com
+        </p>
+        <p>
+            Kyle Trahan - <a href="https://www.linkedin.com/in/kyle-trahan-8384678b/">Linkedin</a>
+            - Email : ktrahan2@gmail.com
+        </p>
+            
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
+    </footer>
       
 </body>
 </html>
