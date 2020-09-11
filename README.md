@@ -105,7 +105,7 @@ Gear up is a web application that allows the user to register and then browse th
 
 ## Technology Used
 
-- Javescript
+- Javascript
 - HTML
 - CSS
 - Anime.js
@@ -122,7 +122,7 @@ To start the server run
 
 - User can register/sign in
 - User can find a recommended packing list for an outdoor activity
-- User can save this packing list to their profile then later view, update and delete that packing list. 
+- User can save this packing list to their profile then view later, update items and delete that packing list. 
 
 ## Features in Progress
 
