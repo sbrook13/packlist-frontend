@@ -88,4 +88,12 @@ input {
      color: white;
      transition: .1s
  }
+
+ #sign-out {
+    position: absolute;
+    right: 10px; 
+    top: 10px;
+    font-size: 14px;
+    color: white;
+ }
  
