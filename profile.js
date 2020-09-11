@@ -18,7 +18,7 @@ fetch(`http://localhost:3500/users/${user_id}`)
         
         const h1 = document.createElement('h1')
 
-        h1.textContent = `${user.name}'s Packing Lists`
+        h1.textContent = `${user.name}'s Packing Lists`.toUpperCase()
 
         profileHeader.append(h1)
     })
@@ -33,17 +33,25 @@ fetch('http://localhost:3500/packs')
                 const packCard = document.createElement('div')
                 const subtitle = document.createElement('h3')
                 const deleteButton = document.createElement('div')
+                const updateButton = document.createElement('div')
 
                 packCard.classList.add('pack-card')
                 subtitle.innerHTML = `<a href="pack.html?user_id=${user_id}&pack_id=${pack.id}">${pack.name}</a>`
                 deleteButton.innerHTML = `
-                <form id="delete-button" method="POST" action="http://localhost:3500/packs/${pack.id}">
+                <form method="POST" action="http://localhost:3500/packs/${pack.id}">
                     <input type="hidden" name="_method" value="delete">
                     <input type="hidden" name="user_id" value=${user_id}>
-                    <input type="submit" value="Remove this Pack">
+                    <input type="submit" value="Remove this Pack" id="card-button" style="font-size:10px">
                 </form>
                 `   
-                packCard.append(subtitle, deleteButton)
+                updateButton.innerHTML = `
+                <form method="POST" action="http://localhost:3500/packs/${pack.id}">
+                    <input type="hidden" name="_method" value="delete">
+                    <input type="hidden" name="user_id" value=${user_id}>
+                    <input type="submit" value="Update this Pack" id="card-button" style="font-size:10px">
+                </form>
+                `   
+                packCard.append(subtitle, updateButton, deleteButton)
                 packSection.append(packCard)
             }
         })

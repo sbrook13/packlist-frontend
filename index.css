@@ -1,6 +1,6 @@
 @import 'home.css';
 
-body {
+#login-page {
     background-image: url("https://www.expocafeperu.com/w/2020/04/essential-backpacking-gear-hiking-list-granite-crown-rain-swiss-carry-on-luggage-camping-trailer-top-ratings-womens-bike-for-women-ultralight-extreme-labs-baby.jpg");
     width: 100%;
     height: 100 vh;
@@ -37,5 +37,4 @@ section {
     text-align: center;
     padding: 0.5rem;
     width: 100%;
-
 }

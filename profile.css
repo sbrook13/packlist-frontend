@@ -1,4 +1,5 @@
 @import 'home.css';
+@import 'index.css';
 
 #profile-header {
     background-image:url("https://www.expocafeperu.com/w/2020/04/essential-backpacking-gear-hiking-list-granite-crown-rain-swiss-carry-on-luggage-camping-trailer-top-ratings-womens-bike-for-women-ultralight-extreme-labs-baby.jpg");
@@ -12,15 +13,18 @@
     justify-content: flex-end;
 }
 
+#pack-section {
+    display: flex;
+    justify-content: center
+}
 .pack-card{
     display: flex;
-    padding: 5rem;
+    padding: 3rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 1rem;
-    margin-top: 3rem;
-    border-radius: 100px 30%;
+    margin: 3rem 1rem 3rem 1rem;
+    border-radius: 100px 10%;
     width: 30%;
     border: solid black 2px;
 }
@@ -36,12 +40,52 @@ h3 a:link {
 }
 
 nav {
+    margin: 1em;
+    flex-direction: column
+}
+form {
     display: flex;
     justify-content: center;
-    align-content: center;
-    flex-direction: column
+    align-items: center;
+    margin: .1em
 }
 
 input {
-
+    margin: 0.5em;
 }
+
+#default-lists-button {
+    letter-spacing: 0.1em;
+    color: black;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 1rem;
+    margin: 0.5rem;
+ }
+ 
+ #default-lists-button:hover, #update-profile-button:hover {
+     transform: scale(1.1);
+     transition: .5s
+ }
+
+ #update-profile-button {
+    letter-spacing: 0.1em;
+    color: black;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255);
+ }
+
+ #card-button {
+    margin: .1em;
+    letter-spacing: 0.1em;
+    color: black;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255);
+}
+
+ #card-button:hover {
+     background-color: steelblue;
+     color: white;
+     transition: .1s
+ }
+ 
