@@ -3,14 +3,15 @@
 An app for finding recommended packing list for outdoor adventures!
 
 # Table Of Contents 
-- [Description](https://github.com/ktrahan2/packlist-backend#description)
-- [Gifs](https://github.com/ktrahan2/packlist-backend#gifsvideo)
-- [Example Code](https://github.com/ktrahan2/packlist-backend#example-code)
-- [Technology Used](https://github.com/ktrahan2/packlist-backend#technology-used)
-- [Setting up for the Application](https://github.com/ktrahan2/packlist-backend#setting-up-for-the-application)
-- [Main Features](https://github.com/ktrahan2/packlist-backend#main-features)
-- [Features in Progress](https://github.com/ktrahan2/packlist-backend#features-in-progress)
-- [Contact Information](https://github.com/ktrahan2/packlist-backend#contact-information)
+- [Description](https://github.com/sbrook13/packlist-frontend#description)
+- [Gifs](https://github.com/sbrook13/packlist-frontend#gifsvideo)
+- [Example Code](https://github.com/sbrook13/packlist-frontend#example-code)
+- [Technology Used](https://github.com/sbrook13/packlist-frontend#technology-used)
+- [Setting up for the Application](https://github.com/sbrook13/packlist-frontend#setting-up-for-the-application)
+- [Main Features](https://github.com/sbrook13/packlist-frontend#main-features)
+- [Features in Progress](https://github.com/sbrook13/packlist-frontend#features-in-progress)
+- [Contact Information](https://github.com/sbrook13/packlist-frontend#contact-information)
+- [Link to Backend Repo](https://github.com/sbrook13/packlist-frontend#link-to-backend-repo)
 
 ## Description
 
