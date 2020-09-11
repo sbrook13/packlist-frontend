@@ -11,6 +11,14 @@ const input = document.createElement('input')
 
     defaultButton.prepend(input)
 
+const updateUser = document.querySelector('#update-user-information')
+const inputUpdate = document.createElement('input')
+    updateUser.action = `http://localhost:3500/users/${user_id}`
+    inputUpdate.type = "hidden"
+    inputUpdate.name = "user_id"
+    inputUpdate.value = user_id
+
+    updateUser.prepend(inputUpdate)
 
 fetch(`http://localhost:3500/users/${user_id}`)
     .then(response => response.json())
@@ -45,9 +53,9 @@ fetch('http://localhost:3500/packs')
                 </form>
                 `   
                 updateButton.innerHTML = `
-                <form method="POST" action="http://localhost:3500/packs/${pack.id}">
-                    <input type="hidden" name="_method" value="delete">
+                <form method="GET" action="http://localhost:3001/pack.html?user_id=${user_id}&pack_id=${pack.id}">
                     <input type="hidden" name="user_id" value=${user_id}>
+                    <input type="hidden" name="pack_id" value=${pack.id}>
                     <input type="submit" value="Update this Pack" id="card-button" style="font-size:10px">
                 </form>
                 `   
