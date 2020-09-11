@@ -81,7 +81,9 @@ Gear up is a web application that allows the user to register and then browse th
 
 To start the server run
 
-    ``` lite-server ```
+``` 
+    lite-server 
+```
 
 ## Main Features
 
