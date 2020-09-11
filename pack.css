@@ -1,2 +1,52 @@
-@import 'home.css';
+/* @import 'home.css'; */
 @import 'activity.css';
+
+
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+h1{
+    color: black;
+    margin: 20px 0 60px 0;
+}
+
+#profile-button {
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#gear-section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+}
+
+.gear-bullet {
+    display: list-item;
+    list-style-type: disc;
+    list-style-position: outside;
+
+}
+
+.random-photo {
+    width: 100vw;   
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    object-fit: cover;
+}
+
+
+
